@@ -1,0 +1,30 @@
+{
+  "model": "GradientBoostingRegressor",
+  "target": "next_row_ph",
+  "features": [
+    "ph_current",
+    "Hardness_current",
+    "Solids_current",
+    "Chloramines_current",
+    "Sulfate_current",
+    "Conductivity_current",
+    "Organic_carbon_current",
+    "Trihalomethanes_current",
+    "Turbidity_current",
+    "hour",
+    "day_of_week",
+    "month",
+    "ph_lag_1",
+    "ph_rolling_mean_3",
+    "ph_rolling_std_3",
+    "hours_since_previous"
+  ],
+  "feature_count": 16,
+  "selection_rule": "Lowest validation RMSE among RandomForestRegressor and GradientBoostingRegressor",
+  "training_rows": 1921,
+  "validation_rows": 411,
+  "test_rows": 413,
+  "validation_rmse": 1.604496681250739,
+  "timestamp_note": "Synthetic timestamps: exploratory pipeline validation only, not real-world underwater forecasting.",
+  "preprocessing": "Median imputation fitted inside the training-only sklearn Pipeline."
+}

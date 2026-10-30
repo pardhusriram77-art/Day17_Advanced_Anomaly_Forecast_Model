@@ -1,0 +1,2 @@
+selected_model,selection_rule,train_rows,validation_rows,test_rows,features,target,timestamp_note
+Gradient Boosting candidate,Lowest validation RMSE,1939,415,417,16,next-row pH,Synthetic timestamps; exploratory pipeline validation only
